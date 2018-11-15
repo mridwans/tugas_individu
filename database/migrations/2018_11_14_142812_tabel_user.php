@@ -15,6 +15,8 @@ class TabelUser extends Migration
     {
         Schema::create('user', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('username',255);
+            $table->string('password',255);
             $table->timestamps();
         });
     }
